@@ -6,7 +6,7 @@ export class HistoryRepository {
 
     get max(): number {
         const defaultMax = 3;
-        return vscode.workspace.getConfiguration('zentabs').get('maximumOpenedTabs') || defaultMax;
+        return vscode.workspace.getConfiguration('onetab').get('maximumOpenedTabs') || defaultMax;
     }
 
     getItems(group: vscode.ViewColumn): HistoryItem[] {
@@ -29,7 +29,7 @@ export class HistoryRepository {
     getItemToTrim(item: HistoryItem): HistoryItem | undefined {
         const items = this.getItems(item.group);
         if (items.length > this.max) {
-          if (vscode.workspace.getConfiguration('zentabs').get('switchWithCurrentTab')) {
+          if (vscode.workspace.getConfiguration('onetab').get('switchWithCurrentTab')) {
             return items.splice(1, 1)[0];
           } else {
             return items.pop();

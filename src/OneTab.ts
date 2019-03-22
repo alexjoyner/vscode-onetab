@@ -3,7 +3,7 @@ import { HistoryRepository } from './HistoryRepository';
 import { Lock } from './Lock';
 import * as vscode from 'vscode';
 
-export class ZenTabs {
+export class OneTab {
     readonly repository: HistoryRepository;
     readonly lock: Lock;
     constructor() {

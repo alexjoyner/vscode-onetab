@@ -1,13 +1,7 @@
 # Change Log
-All notable changes to the "zentabs" extension will be documented in this file.
+All notable changes to the "onetab" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## 0.0.4
-- Fixed configuration title
-
-## 0.0.3
-- Implemented `zentabs.applyLimitFor = window|editorGroup`
-
-## 0.0.1
+## 0.1.0
 - Initial release

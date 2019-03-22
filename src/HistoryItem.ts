@@ -19,7 +19,7 @@ export class HistoryItem {
     }
 
     get group(): vscode.ViewColumn {
-        if ((vscode.workspace.getConfiguration('zentabs').get('applyLimitFor')) === 'editorGroup') {
+        if ((vscode.workspace.getConfiguration('onetab').get('applyLimitFor')) === 'editorGroup') {
             // group by viewColumn
             return this.editor.viewColumn || 0;
         } else {

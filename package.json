@@ -1,18 +1,18 @@
 {
-    "name": "ro-zentabs",
-    "displayName": "ro-zentabs",
+    "name": "vscode-onetab",
+    "displayName": "vscode-onetab",
     "description": "Keep the opened tabs amount below specified limit",
-    "version": "0.0.7",
-    "publisher": "hitode909",
+    "version": "0.1.0",
+    "publisher": "rosco9awj",
     "engines": {
         "vscode": "^1.25.0"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/hitode909/vscode-zentabs"
+        "url": "https://github.com/alexjoyner/vscode-onetab"
     },
     "icon": "icon.png",
-    "homepage": "https://github.com/hitode909/vscode-zentabs",
+    "homepage": "https://github.com/alexjoyner/vscode-onetab",
     "categories": [
         "Other"
     ],
@@ -22,15 +22,15 @@
     "contributes": {
         "configuration": {
             "type": "object",
-            "title": "ro-zentabs",
+            "title": "vscode-onetab",
             "properties": {
-                "zentabs.maximumOpenedTabs": {
+                "onetab.maximumOpenedTabs": {
                     "type": "number",
                     "default": 1,
                     "description": "the maximum amount of tabs that will be keep open",
                     "minimum": 1
                 },
-                "zentabs.applyLimitFor": {
+                "onetab.applyLimitFor": {
                     "type": "string",
                     "default": "window",
                     "description": "apply the maximum amount of tabs for window|editorGroup",
@@ -39,7 +39,7 @@
                         "editorGroup"
                     ]
                 },
-                "zentabs.switchWithCurrentTab": {
+                "onetab.switchWithCurrentTab": {
                     "type": "boolean",
                     "default": false,
                     "description": "once limit of maximum tab is reached, switch the newly opened file with current active tab instead of the older one"
