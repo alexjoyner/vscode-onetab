@@ -2,7 +2,7 @@
     "name": "vscode-onetab",
     "displayName": "vscode-onetab",
     "description": "Keep the opened tabs amount below specified limit",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "rosco9awj",
     "engines": {
         "vscode": "^1.25.0"
@@ -22,29 +22,7 @@
     "contributes": {
         "configuration": {
             "type": "object",
-            "title": "vscode-onetab",
-            "properties": {
-                "onetab.maximumOpenedTabs": {
-                    "type": "number",
-                    "default": 1,
-                    "description": "the maximum amount of tabs that will be keep open",
-                    "minimum": 1
-                },
-                "onetab.applyLimitFor": {
-                    "type": "string",
-                    "default": "window",
-                    "description": "apply the maximum amount of tabs for window|editorGroup",
-                    "enum": [
-                        "window",
-                        "editorGroup"
-                    ]
-                },
-                "onetab.switchWithCurrentTab": {
-                    "type": "boolean",
-                    "default": false,
-                    "description": "once limit of maximum tab is reached, switch the newly opened file with current active tab instead of the older one"
-                }
-            }
+            "title": "vscode-onetab"
         }
     },
     "main": "./out/extension",

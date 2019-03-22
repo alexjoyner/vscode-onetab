@@ -7,7 +7,7 @@ export function activate(context: vscode.ExtensionContext) {
 
     vscode.window.onDidChangeActiveTextEditor(async editor => {
         if (!editor) { return; }
-        await oneTab.onDidChangeActiveTextEditor(editor);
+        await oneTab.onDidChangeActiveTextEditor();
     }, null, context.subscriptions);
 }
 
