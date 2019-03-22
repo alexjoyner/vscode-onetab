@@ -1,0 +1,65 @@
+{
+    "name": "ro-zentabs",
+    "displayName": "ro-zentabs",
+    "description": "Keep the opened tabs amount below specified limit",
+    "version": "0.0.7",
+    "publisher": "hitode909",
+    "engines": {
+        "vscode": "^1.25.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hitode909/vscode-zentabs"
+    },
+    "icon": "icon.png",
+    "homepage": "https://github.com/hitode909/vscode-zentabs",
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "contributes": {
+        "configuration": {
+            "type": "object",
+            "title": "ro-zentabs",
+            "properties": {
+                "zentabs.maximumOpenedTabs": {
+                    "type": "number",
+                    "default": 1,
+                    "description": "the maximum amount of tabs that will be keep open",
+                    "minimum": 1
+                },
+                "zentabs.applyLimitFor": {
+                    "type": "string",
+                    "default": "window",
+                    "description": "apply the maximum amount of tabs for window|editorGroup",
+                    "enum": [
+                        "window",
+                        "editorGroup"
+                    ]
+                },
+                "zentabs.switchWithCurrentTab": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "once limit of maximum tab is reached, switch the newly opened file with current active tab instead of the older one"
+                }
+            }
+        }
+    },
+    "main": "./out/extension",
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "tslint": "^5.8.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
