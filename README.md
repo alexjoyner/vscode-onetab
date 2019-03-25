@@ -1,4 +1,4 @@
-# OnTab
+# OneTab
 
 Inspired by Atom's [zentabs](https://github.com/ArnaudRinquin/atom-zentabs) package.
 
