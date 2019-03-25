@@ -1,8 +1,8 @@
 {
     "name": "vscode-onetab",
     "displayName": "OneTab",
-    "description": "Keep the opened tabs amount below specified limit",
-    "version": "1.0.0",
+    "description": "Keep only one tab opened at a time",
+    "version": "1.0.1",
     "publisher": "rosco9awj",
     "engines": {
         "vscode": "^1.25.0"
