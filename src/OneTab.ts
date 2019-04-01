@@ -15,6 +15,7 @@ export class OneTab {
 
     private async trim() {
         try {
+            await vscode.commands.executeCommand('workbench.action.files.saveAll');
             await vscode.commands.executeCommand('workbench.action.closeOtherEditors');
         }
         catch (error) {
