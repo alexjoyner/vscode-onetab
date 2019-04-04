@@ -18,7 +18,7 @@ export class OneTab {
             await vscode.commands.executeCommand('workbench.action.files.saveAll');
             await setTimeout(async () => {
                 await vscode.commands.executeCommand('workbench.action.closeOtherEditors');
-            }, 5000)
+            }, 100)
         }
         catch (error) {
             this.lock.stop();
