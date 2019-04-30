@@ -2,7 +2,7 @@
 	"name": "vscode-onetab",
 	"displayName": "OneTab",
 	"description": "Keep only one tab opened at a time",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"publisher": "rosco9awj",
 	"engines": {
 		"vscode": "^1.25.0"

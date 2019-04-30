@@ -3,6 +3,9 @@ All notable changes to the "onetab" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 1.0.5
+- Fixed: changed closing files to after 1 second to save on close dialog
+
 ## 1.0.2
 - Fixed: Save all files before closing editors
 
