@@ -1,6 +1,6 @@
 # OneTab
 
-## This package is now depreciated!
+## This package is now deprecated!
 This extension will still work, but there is now native support for this kind of action that proveides a much smoother experiance
 For the native support, check out [this comment](https://github.com/Microsoft/vscode/issues/9872#issuecomment-567463617)
 
